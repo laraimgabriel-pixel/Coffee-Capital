@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Coffee Capital, Patin-ay, Prosperidad</title>
+  <meta name="description" content="The Coffee Capital menu: espresso drinks, blended coffees, tea and chocolate, rice meals, sandwiches, pasta, waffles and cakes, with prices in pesos.">
+  <meta name="theme-color" content="#101B36">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Menu | Coffee Capital, Patin-ay, Prosperidad">
+  <meta property="og:description" content="The Coffee Capital menu: espresso drinks, blended coffees, tea and chocolate, rice meals, sandwiches, pasta, waffles and cakes, with prices in pesos.">
+  <meta property="og:image" content="images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Fonts: Fraunces (headings) + Inter (body). Falls back to Georgia / system fonts if offline. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+(function (d) {
+  var reduce = false, seen = null, wipe = null, mask = false;
+  try { reduce = matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+  try { seen = sessionStorage.getItem('ccIntro'); wipe = sessionStorage.getItem('ccWipe'); if (wipe) sessionStorage.removeItem('ccWipe'); } catch (e) {}
+  try { mask = CSS.supports('mask-image', 'url(x)') || CSS.supports('-webkit-mask-image', 'url(x)'); } catch (e) {}
+  d.classList.add('js');
+  if (wipe && !reduce && mask) d.classList.add('wipe-hold');
+  if (false && !reduce && !seen && !wipe && mask) d.classList.add('intro');
+  if (wipe) { try { sessionStorage.setItem('ccIntro', '1'); } catch (e) {} }
+})(document.documentElement);
+</script>
+</head>
+<body>
+  <div class="wipe" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Coffee Capital, home">
+        <img src="images/logo-mark-white.png" alt="" width="25" height="34">
+        <span class="brand__name">Coffee Capital</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="menu.html" aria-current="page">Menu</a></li>
+          <li><a class="nav__link" href="visit.html">About &amp; Visit</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary header-call" data-magnet href="tel:+639278547741">Call 0927 854 7741</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+        <span class="menu-toggle__text">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="visit.html">About &amp; Visit</a></li>
+    </ul>
+    <p class="mobile-nav__meta">
+      Purok 2, Patin-ay, Prosperidad,<br>Agusan del Sur 8500<br>
+      <a href="tel:+639278547741">0927 854 7741</a>
+    </p>
+  </div>
+
+  <main id="main">
+    <section class="page-head" data-lamp aria-labelledby="page-title">
+      <div class="container page-head__grid">
+        <div>
+          <span class="label label--rule"><span class="num">&bull;</span>Menu</span>
+          <h1 id="page-title" data-split>Coffee, meals and <em>waffles.</em></h1>
+          <p class="page-head__sub">Prices are in Philippine pesos (&#8369;). Items marked <span class="draft">to confirm</span> are waiting for the caf&eacute; to check them.</p>
+          <p class="page-head__hint js-only">Tap + beside any item to build a list to show at the counter.</p>
+        </div>
+        <figure class="page-head__fig" data-tilt><div class="media"><img src="images/food-pasta-waffle-1100.jpg" srcset="images/food-pasta-waffle-640.jpg 640w, images/food-pasta-waffle-1100.jpg 1100w" sizes="(min-width: 900px) 30vw, 90vw" width="1100" height="1224" fetchpriority="high" alt="Spaghetti with shrimp and pesto, toasted bread, a Biscoff waffle on a stick and a chocolate drink"></div><figcaption>Pasta, toast and a Biscoff waffle</figcaption></figure>
+      </div>
+    </section>
+
+    <div class="menubar">
+      <div class="container menubar__inner">
+        <nav class="chips" aria-label="Menu categories"><a class="chip" href="#menu-list" data-filter="all" aria-current="true">All</a><a class="chip" href="#coffee" data-filter="coffee">Coffee</a><a class="chip" href="#blended" data-filter="blended">Blended &amp; iced</a><a class="chip" href="#tea" data-filter="tea">Tea &amp; chocolate</a><a class="chip" href="#rice" data-filter="rice">Rice meals</a><a class="chip" href="#snacks" data-filter="snacks">Snacks</a><a class="chip" href="#mains" data-filter="mains">Mains &amp; pasta</a><a class="chip" href="#waffles" data-filter="waffles">Waffles</a><a class="chip" href="#cakes" data-filter="cakes">Cakes &amp; cookies</a></nav>
+        <div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><label class="sr-only" for="menu-search">Search the menu</label><input id="menu-search" type="search" placeholder="Search the menu" autocomplete="off" data-search></div>
+      </div>
+    </div>
+    <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+
+    <div class="menucard" id="menu-list" data-menucard>
+      <section class="mg" id="coffee" data-cat="coffee" aria-labelledby="h-coffee">
+        <div class="container mg__inner">
+          <div class="mg__side">
+            <h2 id="h-coffee">Coffee &amp; espresso</h2><p class="mg__note">Hot 12 oz &middot; Cold 16 oz unless noted.</p><figure class="mg__fig reveal-media" data-tilt><div class="media"><img src="images/interior-counter-drinks-1100.jpg" srcset="images/interior-counter-drinks-640.jpg 640w, images/interior-counter-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="1100" height="1379" loading="lazy" decoding="async" alt="Iced coffee drinks in Coffee Capital cups lined up on the counter, with the barista and shelves behind"></div><figcaption>Drinks on the counter</figcaption></figure>
+          </div>
+          <div class="mg__list"><h3 class="mg__sub">Espresso drinks</h3><ul><li class="item" data-name="Espresso"><span class="item__name">Espresso</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;60</span><button class="item__add" type="button" data-id="coffee-1" data-name="Espresso" data-cat="Coffee" data-price="60" aria-label="Add Espresso to my list">+</button><span class="item__meta">Hot 12 oz</span></li><li class="item" data-name="Doppio"><span class="item__name">Doppio</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;80</span><button class="item__add" type="button" data-id="coffee-2" data-name="Doppio" data-cat="Coffee" data-price="80" aria-label="Add Doppio to my list">+</button><span class="item__meta">Hot 12 oz</span></li><li class="item" data-name="Americano"><span class="item__name">Americano</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;90</span><button class="item__add" type="button" data-id="coffee-3" data-name="Americano" data-cat="Coffee" data-price="90" aria-label="Add Americano to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Latte"><span class="item__name">Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;110</span><button class="item__add" type="button" data-id="coffee-4" data-name="Latte" data-cat="Coffee" data-price="110" aria-label="Add Latte to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Cappuccino"><span class="item__name">Cappuccino</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;110</span><button class="item__add" type="button" data-id="coffee-5" data-name="Cappuccino" data-cat="Coffee" data-price="110" aria-label="Add Cappuccino to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Sea Salt"><span class="item__name">Sea Salt</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="coffee-6" data-name="Sea Salt" data-cat="Coffee" data-price="130" aria-label="Add Sea Salt to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Spanish Latte"><span class="item__name">Spanish Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;140</span><button class="item__add" type="button" data-id="coffee-7" data-name="Spanish Latte" data-cat="Coffee" data-price="140" aria-label="Add Spanish Latte to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Caramel Macchiato"><span class="item__name">Caramel Macchiato</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-8" data-name="Caramel Macchiato" data-cat="Coffee" data-price="160" aria-label="Add Caramel Macchiato to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Mocha"><span class="item__name">Mocha</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-9" data-name="Mocha" data-cat="Coffee" data-price="160" aria-label="Add Mocha to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Vanilla"><span class="item__name">Vanilla</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-10" data-name="Vanilla" data-cat="Coffee" data-price="160" aria-label="Add Vanilla to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Salted Caramel"><span class="item__name">Salted Caramel</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-11" data-name="Salted Caramel" data-cat="Coffee" data-price="160" aria-label="Add Salted Caramel to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Macadamia"><span class="item__name">Macadamia</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-12" data-name="Macadamia" data-cat="Coffee" data-price="160" aria-label="Add Macadamia to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Butterscotch"><span class="item__name">Butterscotch</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-13" data-name="Butterscotch" data-cat="Coffee" data-price="160" aria-label="Add Butterscotch to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Toffee Nut"><span class="item__name">Toffee Nut</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;170</span><button class="item__add" type="button" data-id="coffee-14" data-name="Toffee Nut" data-cat="Coffee" data-price="170" aria-label="Add Toffee Nut to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Pick Your Own Beans"><span class="item__name">Pick Your Own Beans</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;140</span><button class="item__add" type="button" data-id="coffee-15" data-name="Pick Your Own Beans" data-cat="Coffee" data-price="140" aria-label="Add Pick Your Own Beans to my list">+</button><span class="item__meta">Details <span class="draft">to confirm</span></span></li></ul><h3 class="mg__sub">Specialty lattes</h3><ul><li class="item" data-name="Coconut Iced Latte"><span class="item__name">Coconut Iced Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-16" data-name="Coconut Iced Latte" data-cat="Coffee" data-price="160" aria-label="Add Coconut Iced Latte to my list">+</button></li><li class="item" data-name="Biscoff Iced Latte"><span class="item__name">Biscoff Iced Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;190</span><button class="item__add" type="button" data-id="coffee-17" data-name="Biscoff Iced Latte" data-cat="Coffee" data-price="190" aria-label="Add Biscoff Iced Latte to my list">+</button></li><li class="item" data-name="Pistachio Latte"><span class="item__name">Pistachio Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;170</span><button class="item__add" type="button" data-id="coffee-18" data-name="Pistachio Latte" data-cat="Coffee" data-price="170" aria-label="Add Pistachio Latte to my list">+</button></li></ul></div>
+        </div>
+      </section>
+      <section class="mg" id="blended" data-cat="blended" aria-labelledby="h-blended">
+        <div class="container mg__inner">
+          <div class="mg__side">
+            <h2 id="h-blended">Blended &amp; iced drinks</h2><p class="mg__note">16 oz. Category and sizes <span class="draft">to confirm</span>. Strawberry and Mango each appear at two prices <span class="draft">to confirm</span>.</p>
+          </div>
+          <div class="mg__list"><h3 class="mg__sub">Frappuccino</h3><ul><li class="item" data-name="Avocado Frappuccino"><span class="item__name">Avocado Frappuccino</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;190</span><button class="item__add" type="button" data-id="blended-1" data-name="Avocado Frappuccino" data-cat="Blended &amp; iced" data-price="190" aria-label="Add Avocado Frappuccino to my list">+</button></li></ul><h3 class="mg__sub">&#8369;160</h3><ul><li class="item" data-name="Macadamia"><span class="item__name">Macadamia</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-2" data-name="Macadamia" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Macadamia to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Chocolate Cookie"><span class="item__name">Chocolate Cookie</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-3" data-name="Chocolate Cookie" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Chocolate Cookie to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Salted Caramel"><span class="item__name">Salted Caramel</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-4" data-name="Salted Caramel" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Salted Caramel to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Biscoff"><span class="item__name">Biscoff</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-5" data-name="Biscoff" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Biscoff to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Toffee Nut"><span class="item__name">Toffee Nut</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-6" data-name="Toffee Nut" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Toffee Nut to my list">+</button><span class="item__meta">16 oz</span></li></ul><h3 class="mg__sub">&#8369;150</h3><ul><li class="item" data-name="Banana"><span class="item__name">Banana</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;150</span><button class="item__add" type="button" data-id="blended-7" data-name="Banana" data-cat="Blended &amp; iced" data-price="150" aria-label="Add Banana to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Mango"><span class="item__name">Mango</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;150</span><button class="item__add" type="button" data-id="blended-8" data-name="Mango" data-cat="Blended &amp; iced" data-price="150" aria-label="Add Mango to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Strawberry"><span class="item__name">Strawberry</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;150</span><button class="item__add" type="button" data-id="blended-9" data-name="Strawberry" data-cat="Blended &amp; iced" data-price="150" aria-label="Add Strawberry to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Oreo"><span class="item__name">Oreo</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;150</span><button class="item__add" type="button" data-id="blended-10" data-name="Oreo" data-cat="Blended &amp; iced" data-price="150" aria-label="Add Oreo to my list">+</button><span class="item__meta">16 oz</span></li></ul><h3 class="mg__sub">&#8369;130</h3><ul><li class="item" data-name="Strawberry"><span class="item__name">Strawberry</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-11" data-name="Strawberry" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Strawberry to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Cucumber"><span class="item__name">Cucumber</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-12" data-name="Cucumber" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Cucumber to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Green Apple"><span class="item__name">Green Apple</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-13" data-name="Green Apple" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Green Apple to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Mango"><span class="item__name">Mango</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-14" data-name="Mango" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Mango to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Peach Mango"><span class="item__name">Peach Mango</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-15" data-name="Peach Mango" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Peach Mango to my list">+</button><span class="item__meta">16 oz</span></li></ul></div>
+        </div>
+      </section>
+      <section class="mg" id="tea" data-cat="tea" aria-labelledby="h-tea">
+        <div class="container mg__inner">
+          <div class="mg__side">
+            <h2 id="h-tea">Tea &amp; chocolate</h2>
+          </div>
+          <div class="mg__list"><ul><li class="item" data-name="Tea"><span class="item__name">Tea</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;90</span><button class="item__add" type="button" data-id="tea-1" data-name="Tea" data-cat="Tea &amp; chocolate" data-price="90" aria-label="Add Tea to my list">+</button></li><li class="item" data-name="Hot Choco"><span class="item__name">Hot Choco</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;100</span><button class="item__add" type="button" data-id="tea-2" data-name="Hot Choco" data-cat="Tea &amp; chocolate" data-price="100" aria-label="Add Hot Choco to my list">+</button></li><li class="item" data-name="Ice Choco"><span class="item__name">Ice Choco</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;120</span><button class="item__add" type="button" data-id="tea-3" data-name="Ice Choco" data-cat="Tea &amp; chocolate" data-price="120" aria-label="Add Ice Choco to my list">+</button></li></ul></div>
+        </div>
+      </section>
+      <section class="mg" id="rice" data-cat="rice" aria-labelledby="h-rice">
+        <div class="container mg__inner">
+          <div class="mg__side">
+            <h2 id="h-rice">Rice meals</h2><figure class="mg__fig reveal-media" data-tilt><div class="media"><img src="images/food-rice-bowl-1100.jpg" srcset="images/food-rice-bowl-640.jpg 640w, images/food-rice-bowl-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="1024" height="1365" loading="lazy" decoding="async" alt="A rice bowl with sliced sausage, cheese sauce and a fried egg"></div><figcaption>Rice meal</figcaption></figure>
+          </div>
+          <div class="mg__list"><ul><li class="item" data-name="Tocilog"><span class="item__name">Tocilog</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="rice-1" data-name="Tocilog" data-cat="Rice meals" data-price="160" aria-label="Add Tocilog to my list">+</button><span class="item__meta">Chicken or pork</span></li><li class="item" data-name="Porksilog"><span class="item__name">Porksilog</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;180</span><button class="item__add" type="button" data-id="rice-2" data-name="Porksilog" data-cat="Rice meals" data-price="180" aria-label="Add Porksilog to my list">+</button></li><li class="item" data-name="Spamsilog"><span class="item__name">Spamsilog</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;190</span><button class="item__add" type="button" data-id="rice-3" data-name="Spamsilog" data-cat="Rice meals" data-price="190" aria-label="Add Spamsilog to my list">+</button></li></ul></div>
+        </div>
+      </section>
+      <section class="mg" id="snacks" data-cat="snacks" aria-labelledby="h-snacks">
+        <div class="container mg__inner">
+          <div class="mg__side">
+            <h2 id="h-snacks">Sandwiches &amp; snacks</h2><figure class="mg__fig reveal-media" data-tilt><div class="media"><img src="images/food-sandwiches-drinks-1100.jpg" srcset="images/food-sandwiches-drinks-640.jpg 640w, images/food-sandwiches-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="1100" height="1227" loading="lazy" decoding="async" alt="Triangle sandwiches on a wooden tray beside two iced drinks and a cup of rice"></div><figcaption>Sandwiches</figcaption></figure>
+          </div>
+          <div class="mg__list"><ul><li class="item" data-name="Capital Fries"><span class="item__name">Capital Fries</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;110</span><button class="item__add" type="button" data-id="snacks-1" data-name="Capital Fries" data-cat="Snacks" data-price="110" aria-label="Add Capital Fries to my list">+</button></li><li class="item" data-name="Tuna Sandwich"><span class="item__name">Tuna Sandwich</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="snacks-2" data-name="Tuna Sandwich" data-cat="Snacks" data-price="130" aria-label="Add Tuna Sandwich to my list">+</button></li><li class="item" data-name="Chicken Sandwich"><span class="item__name">Chicken Sandwich</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;140</span><button class="item__add" type="button" data-id="snacks-3" data-name="Chicken Sandwich" data-cat="Snacks" data-price="140" aria-label="Add Chicken Sandwich to my list">+</button></li></ul></div>
+        </div>
+      </section>
+      <section class="mg" id="mains" data-cat="mains" aria-labelledby="h-mains">
+        <div class="container mg__inner">
+          <div class="mg__side">
+            <h2 id="h-mains">Mains &amp; pasta</h2><figure class="mg__fig reveal-media" data-tilt><div class="media"><img src="images/food-burger-fries-1100.jpg" srcset="images/food-burger-fries-640.jpg 640w, images/food-burger-fries-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="939" height="1177" loading="lazy" decoding="async" alt="A sesame bun burger with lettuce, and fries in a paper cone with ketchup"></div><figcaption>Burger and fries</figcaption></figure>
+          </div>
+          <div class="mg__list"><ul><li class="item" data-name="Pork Tenderloin Salpicao"><span class="item__name">Pork Tenderloin Salpicao</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;180</span><button class="item__add" type="button" data-id="mains-1" data-name="Pork Tenderloin Salpicao" data-cat="Mains &amp; pasta" data-price="180" aria-label="Add Pork Tenderloin Salpicao to my list">+</button></li><li class="item" data-name="Hungarian"><span class="item__name">Hungarian</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;180</span><button class="item__add" type="button" data-id="mains-2" data-name="Hungarian" data-cat="Mains &amp; pasta" data-price="180" aria-label="Add Hungarian to my list">+</button></li><li class="item" data-name="Spaghetti Carbonara"><span class="item__name">Spaghetti Carbonara</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;195</span><button class="item__add" type="button" data-id="mains-3" data-name="Spaghetti Carbonara" data-cat="Mains &amp; pasta" data-price="195" aria-label="Add Spaghetti Carbonara to my list">+</button></li><li class="item" data-name="Spaghetti Meat Sauce"><span class="item__name">Spaghetti Meat Sauce</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;195</span><button class="item__add" type="button" data-id="mains-4" data-name="Spaghetti Meat Sauce" data-cat="Mains &amp; pasta" data-price="195" aria-label="Add Spaghetti Meat Sauce to my list">+</button></li><li class="item" data-name="Spaghetti Shrimp Al Pesto"><span class="item__name">Spaghetti Shrimp Al Pesto</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;195</span><button class="item__add" type="button" data-id="mains-5" data-name="Spaghetti Shrimp Al Pesto" data-cat="Mains &amp; pasta" data-price="195" aria-label="Add Spaghetti Shrimp Al Pesto to my list">+</button></li><li class="item" data-name="Fried Chicken Tender"><span class="item__name">Fried Chicken Tender</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;200</span><button class="item__add" type="button" data-id="mains-6" data-name="Fried Chicken Tender" data-cat="Mains &amp; pasta" data-price="200" aria-label="Add Fried Chicken Tender to my list">+</button></li><li class="item" data-name="Coffee Capital Burger"><span class="item__name">Coffee Capital Burger</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;280</span><button class="item__add" type="button" data-id="mains-7" data-name="Coffee Capital Burger" data-cat="Mains &amp; pasta" data-price="280" aria-label="Add Coffee Capital Burger to my list">+</button></li></ul></div>
+        </div>
+      </section>
+      <section class="mg" id="waffles" data-cat="waffles" aria-labelledby="h-waffles">
+        <div class="container mg__inner">
+          <div class="mg__side">
+            <h2 id="h-waffles">Waffles</h2><p class="mg__note">1 piece or 2 pieces. Price per portion <span class="draft">to confirm</span>.</p><figure class="mg__fig reveal-media" data-tilt><div class="media"><img src="images/food-biscoff-waffle-1100.jpg" srcset="images/food-biscoff-waffle-640.jpg 640w, images/food-biscoff-waffle-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="1024" height="1536" loading="lazy" decoding="async" alt="A waffle on a wooden stick, topped with cream, caramel sauce and a Lotus Biscoff biscuit"></div><figcaption>Biscoff waffle</figcaption></figure>
+          </div>
+          <div class="mg__list"><ul><li class="item" data-name="Classic"><span class="item__name">Classic</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;135</span><button class="item__add" type="button" data-id="waffles-1" data-name="Classic" data-cat="Waffles" data-price="135" aria-label="Add Classic to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li><li class="item" data-name="Chocochips"><span class="item__name">Chocochips</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;155</span><button class="item__add" type="button" data-id="waffles-2" data-name="Chocochips" data-cat="Waffles" data-price="155" aria-label="Add Chocochips to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li><li class="item" data-name="Oreo Crumble"><span class="item__name">Oreo Crumble</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="waffles-3" data-name="Oreo Crumble" data-cat="Waffles" data-price="160" aria-label="Add Oreo Crumble to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li><li class="item" data-name="Nutella"><span class="item__name">Nutella</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="waffles-4" data-name="Nutella" data-cat="Waffles" data-price="160" aria-label="Add Nutella to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li><li class="item" data-name="Biscoff Bliss"><span class="item__name">Biscoff Bliss</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;170</span><button class="item__add" type="button" data-id="waffles-5" data-name="Biscoff Bliss" data-cat="Waffles" data-price="170" aria-label="Add Biscoff Bliss to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li></ul></div>
+        </div>
+      </section>
+      <section class="mg" id="cakes" data-cat="cakes" aria-labelledby="h-cakes">
+        <div class="container mg__inner">
+          <div class="mg__side">
+            <h2 id="h-cakes">Cakes &amp; cookies</h2><p class="mg__note">Cheesecake, red velvet, chocolate cake and cookies. Flavors and prices <span class="draft">to confirm</span>.</p><figure class="mg__fig reveal-media" data-tilt><div class="media"><img src="images/food-cake-selection-1100.jpg" srcset="images/food-cake-selection-640.jpg 640w, images/food-cake-selection-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="939" height="1177" loading="lazy" decoding="async" alt="Six boxes seen from above: a pecan cake, cookies, two blueberry cheesecake slices, red velvet cake and chocolate cake"></div><figcaption>Cakes and cookies</figcaption></figure>
+          </div>
+          <div class="mg__list"></div>
+        </div>
+      </section>
+      <p class="mg__empty container" data-empty hidden>Nothing on the menu matches that search.</p>
+    </div>
+
+    <section class="cta" aria-labelledby="menu-cta-title">
+      <div class="container cta__row">
+        <h2 id="menu-cta-title">Ready to <em>visit?</em></h2>
+        <div class="footer__actions">
+          <a class="btn btn--light" data-magnet href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Capital+Patin-ay+Prosperidad+Agusan+del+Sur" target="_blank" rel="noopener">Get directions <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn--outline-light" href="tel:+639278547741">Call 0927 854 7741</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-lamp>
+    <div class="container footer__cta">
+      <p class="footer__time">Now in Prosperidad <span data-clock></span></p>
+      <h2 class="footer__big">See you in <em>Patin-ay.</em></h2>
+      <div class="footer__actions">
+        <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Capital+Patin-ay+Prosperidad+Agusan+del+Sur" target="_blank" rel="noopener">Get directions <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn--outline-light" href="tel:+639278547741">Call 0927 854 7741</a>
+      </div>
+    </div>
+    <div class="container site-footer__inner">
+      <div>
+        <img src="images/logo-mark-white.png" alt="Coffee Capital" width="33" height="44">
+        <p style="margin-top:12px;color:var(--taupe);max-width:30ch">Your daily coffee stop in Prosperidad.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <address>
+          Purok 2, Patin-ay, Prosperidad,<br>Agusan del Sur 8500<br><br>
+          <a href="tel:+639278547741">0927 854 7741</a><br>
+          <a href="mailto:coffee.capitalcafe@gmail.com">coffee.capitalcafe@gmail.com</a>
+        </address>
+      </div>
+      <div>
+        <h3>Elsewhere</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/coffee.capitalcafe/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@coffee.capitalcafe" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://linktr.ee/coffee.capitalcafe" target="_blank" rel="noopener">Linktree</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="visit.html">About &amp; Visit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container"><p class="wordmark" aria-hidden="true"><span>C</span><span>O</span><span>F</span><span>F</span><span>E</span><span>E</span> <span>C</span><span>A</span><span>P</span><span>I</span><span>T</span><span>A</span><span>L</span></p></div>
+    <div class="container site-footer__base"><span>&copy; 2026 Coffee Capital</span><span>Purok 2, Patin-ay, Prosperidad, Agusan del Sur 8500</span></div>
+  </footer>
+
+  <nav class="dock" aria-label="Quick actions">
+    <a href="tel:+639278547741"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call</span></a>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Capital+Patin-ay+Prosperidad+Agusan+del+Sur" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Directions</span></a>
+    <a href="menu.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>Menu</span></a>
+  </nav>
+
+  <button class="order-pill" type="button" aria-haspopup="dialog"><span>My list</span> <b data-order-count>0</b> <span data-order-total>&#8369;0</span></button>
+  <dialog class="order" id="order" aria-label="My list">
+    <div class="order__in">
+      <div class="order__head"><h2>My list</h2><button class="order__x" type="button" data-order-close aria-label="Close">&times;</button></div>
+      <div class="order__list" data-order-list></div>
+      <div class="order__foot">
+        <p class="order__total"><span>Total</span><b data-order-sum>&#8369;0</b></p>
+        <p class="order__note">A list to show at the counter. It does not place an order. Prices as posted; items marked &ldquo;to confirm&rdquo; may change.</p>
+        <div class="order__acts">
+          <button class="btn btn--ghost-dark" type="button" data-order-clear>Clear</button>
+          <button class="btn btn--primary" type="button" data-order-copy>Copy list</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Capital | Your daily coffee stop in Prosperidad</title>
+  <meta name="description" content="Your daily coffee stop in Prosperidad. Coffee Capital is a coffee shop in Patin-ay, Prosperidad, Agusan del Sur. See the menu, opening hours and directions.">
+  <meta name="theme-color" content="#101B36">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coffee Capital | Your daily coffee stop in Prosperidad">
+  <meta property="og:description" content="Your daily coffee stop in Prosperidad. Coffee Capital is a coffee shop in Patin-ay, Prosperidad, Agusan del Sur. See the menu, opening hours and directions.">
+  <meta property="og:image" content="images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Fonts: Fraunces (headings) + Inter (body). Falls back to Georgia / system fonts if offline. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+(function (d) {
+  var reduce = false, seen = null, wipe = null, mask = false;
+  try { reduce = matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+  try { seen = sessionStorage.getItem('ccIntro'); wipe = sessionStorage.getItem('ccWipe'); if (wipe) sessionStorage.removeItem('ccWipe'); } catch (e) {}
+  try { mask = CSS.supports('mask-image', 'url(x)') || CSS.supports('-webkit-mask-image', 'url(x)'); } catch (e) {}
+  d.classList.add('js');
+  if (wipe && !reduce && mask) d.classList.add('wipe-hold');
+  if (true && !reduce && !seen && !wipe && mask) d.classList.add('intro');
+  if (wipe) { try { sessionStorage.setItem('ccIntro', '1'); } catch (e) {} }
+})(document.documentElement);
+</script>
+</head>
+<body>
+  <div class="wipe" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Coffee Capital, home">
+        <img src="images/logo-mark-white.png" alt="" width="25" height="34">
+        <span class="brand__name">Coffee Capital</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="nav__link" href="menu.html">Menu</a></li>
+          <li><a class="nav__link" href="visit.html">About &amp; Visit</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary header-call" data-magnet href="tel:+639278547741">Call 0927 854 7741</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+        <span class="menu-toggle__text">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="visit.html">About &amp; Visit</a></li>
+    </ul>
+    <p class="mobile-nav__meta">
+      Purok 2, Patin-ay, Prosperidad,<br>Agusan del Sur 8500<br>
+      <a href="tel:+639278547741">0927 854 7741</a>
+    </p>
+  </div>
+
+  <main id="main">
+    <div class="hero-wrap">
+    <section class="hero on-navy" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <video class="hero__video is-top" autoplay muted playsinline preload="auto" poster="images/hero-video-poster.jpg" aria-hidden="true" tabindex="-1">
+          <source src="video/hero-storefront-once.mp4" type="video/mp4">
+          <img class="hero__still" src="images/hero-storefront-night-1086.jpg" width="1086" height="1357" alt="Coffee Capital&#x27;s storefront at night, lit from inside, with the logo on a white sign above the entrance">
+        </video>
+        <video class="hero__video" data-pos muted playsinline preload="auto" poster="images/hero-interior-poster.jpg" aria-hidden="true" tabindex="-1" style="object-position:50% 56%">
+          <source src="video/hero-interior.mp4" type="video/mp4">
+        </video>
+        <div class="hero__tod" aria-hidden="true"></div>
+        <div class="hero__shade" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero__copy">
+        <span class="label label--rule" data-in style="--d:700">Coffee shop &middot; Patin-ay, Prosperidad</span>
+        <h1 id="hero-title" data-split>
+          <span class="line"><span class="line__in">Your daily coffee stop</span></span>
+          <span class="line"><span class="line__in">in <em>Prosperidad.</em></span></span>
+        </h1>
+        <div class="hero__foot">
+          <div class="hero__ctas" data-in style="--d:1100">
+            <p class="hero__sub">Espresso drinks, blended coffees, rice meals, pasta and waffles.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" data-magnet href="menu.html">View menu <span class="arrow" aria-hidden="true">&rarr;</span></a>
+              <a class="btn btn--outline-light" href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Capital+Patin-ay+Prosperidad+Agusan+del+Sur" target="_blank" rel="noopener">Get directions</a>
+            </div>
+          </div>
+          <div class="hero__side" data-in style="--d:1250">
+            <p class="hero__greet" data-greet>Patin-ay, Prosperidad</p>
+            <p class="open-now" data-open data-state="unknown"><span class="open-now__dot" aria-hidden="true"></span><span data-open-text>Mon&ndash;Fri 9 AM&ndash;10 PM &middot; Sat&ndash;Sun 12 PM&ndash;10 PM</span></p>
+            <ul class="hero__ticks" aria-hidden="true"><li aria-current="true"><span>01 Outside</span><i></i></li><li><span>02 Inside</span><i></i></li></ul>
+            <a class="scroll-cue" href="#story"><span>Scroll</span><i aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <div class="strip on-cobalt" aria-hidden="true"><div class="strip__track"><ul class="strip__group"><li>Coffee Capital</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Patin-ay</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Prosperidad</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Agusan del Sur</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Coffee Capital</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Patin-ay</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Prosperidad</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Agusan del Sur</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li></ul><ul class="strip__group"><li>Coffee Capital</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Patin-ay</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Prosperidad</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Agusan del Sur</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Coffee Capital</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Patin-ay</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Prosperidad</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li><li>Agusan del Sur</li><li><img src="images/logo-mark-white.png" alt="" width="13" height="18"></li></ul></div></div>
+
+    <section class="section statement" aria-labelledby="statement-label">
+      <div class="container">
+        <span class="label label--rule reveal" id="statement-label"><span class="num">01</span>About the caf&eacute;</span>
+        <p class="statement__text" data-words>Coffee Capital is a coffee shop in Patin-ay, Prosperidad. Espresso drinks, blended coffees, rice meals, pasta, sandwiches and waffles, served every day.</p>
+      </div>
+    </section>
+
+    <section class="story on-navy" id="story" data-story data-lamp aria-label="A look around Coffee Capital">
+      <div class="story__pin">
+        <div class="container story__stage">
+          <p class="story__count" aria-hidden="true"><span data-story-count>01</span> / 07</p>
+          <div class="story__chapters">
+          <article class="chapter" style="--i:0">
+            <div class="chapter__text">
+              <span class="chapter__n">01</span>
+              <h3>The storefront</h3>
+              <p>Purok 2, Patin-ay, lit in blue at night.</p>
+            </div>
+            <figure class="chapter__fig"><div class="media"><img src="images/hero-storefront-night-1086.jpg" srcset="images/hero-storefront-night-640.jpg 640w, images/hero-storefront-night-1086.jpg 1086w" sizes="(min-width: 900px) 40vw, 92vw" width="1086" height="1357" fetchpriority="high" alt="Coffee Capital&#x27;s storefront at night, lit from inside, with the logo on a white sign above the entrance"></div></figure>
+          </article>
+          <article class="chapter" style="--i:1">
+            <div class="chapter__text">
+              <span class="chapter__n">02</span>
+              <h3>The seating</h3>
+              <p>Wooden tables and chairs by a green tiled wall with framed prints.</p>
+            </div>
+            <figure class="chapter__fig"><div class="media"><img src="images/space-art-wall-1086.jpg" srcset="images/space-art-wall-640.jpg 640w, images/space-art-wall-1086.jpg 1086w" sizes="(min-width: 900px) 40vw, 92vw" width="1086" height="1357" loading="lazy" decoding="async" alt="Round wooden tables and chairs beside a green tiled wall with framed prints"></div></figure>
+          </article>
+          <article class="chapter" style="--i:2">
+            <div class="chapter__text">
+              <span class="chapter__n">03</span>
+              <h3>The window counter</h3>
+              <p>A wooden counter with high stools along the window.</p>
+            </div>
+            <figure class="chapter__fig"><div class="media"><img src="images/space-window-counter-1086.jpg" srcset="images/space-window-counter-640.jpg 640w, images/space-window-counter-1086.jpg 1086w" sizes="(min-width: 900px) 40vw, 92vw" width="1086" height="1357" loading="lazy" decoding="async" alt="A wooden counter with high stools along a window, with plants on the sill"></div></figure>
+          </article>
+          <article class="chapter" style="--i:3">
+            <div class="chapter__text">
+              <span class="chapter__n">04</span>
+              <h3>Behind the counter</h3>
+              <p>Syrups, coffee and a row of iced drinks, ready to go.</p>
+            </div>
+            <figure class="chapter__fig"><div class="media"><img src="images/interior-counter-drinks-1100.jpg" srcset="images/interior-counter-drinks-640.jpg 640w, images/interior-counter-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 40vw, 92vw" width="1100" height="1379" loading="lazy" decoding="async" alt="Iced coffee drinks in Coffee Capital cups lined up on the counter, with the barista and shelves behind"></div></figure>
+          </article>
+          <article class="chapter" style="--i:4">
+            <div class="chapter__text">
+              <span class="chapter__n">05</span>
+              <h3>Rice meals</h3>
+              <p>Rice bowls with egg, served with iced drinks.</p>
+            </div>
+            <figure class="chapter__fig"><div class="media"><img src="images/food-rice-drinks-1100.jpg" srcset="images/food-rice-drinks-640.jpg 640w, images/food-rice-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 40vw, 92vw" width="1086" height="1211" loading="lazy" decoding="async" alt="Two iced drinks and two rice bowls topped with fried eggs"></div></figure>
+          </article>
+          <article class="chapter" style="--i:5">
+            <div class="chapter__text">
+              <span class="chapter__n">06</span>
+              <h3>Pasta and waffles</h3>
+              <p>Shrimp pesto pasta, toasted bread and a Biscoff waffle.</p>
+            </div>
+            <figure class="chapter__fig"><div class="media"><img src="images/food-pasta-waffle-1100.jpg" srcset="images/food-pasta-waffle-640.jpg 640w, images/food-pasta-waffle-1100.jpg 1100w" sizes="(min-width: 900px) 40vw, 92vw" width="1100" height="1224" loading="lazy" decoding="async" alt="Spaghetti with shrimp and pesto, toasted bread, a Biscoff waffle on a stick and a chocolate drink"></div></figure>
+          </article>
+          <article class="chapter" style="--i:6">
+            <div class="chapter__text">
+              <span class="chapter__n">07</span>
+              <h3>Cakes and cookies</h3>
+              <p>Cheesecake, red velvet, chocolate cake and cookies.</p>
+            </div>
+            <figure class="chapter__fig"><div class="media"><img src="images/food-cake-selection-1100.jpg" srcset="images/food-cake-selection-640.jpg 640w, images/food-cake-selection-1100.jpg 1100w" sizes="(min-width: 900px) 40vw, 92vw" width="939" height="1177" loading="lazy" decoding="async" alt="Six boxes seen from above: a pecan cake, cookies, two blueberry cheesecake slices, red velvet cake and chocolate cake"></div></figure>
+          </article>
+          </div>
+          <div class="story__dots" role="group" aria-label="Chapters"><button type="button" aria-label="Go to chapter 1: The storefront"></button><button type="button" aria-label="Go to chapter 2: The seating"></button><button type="button" aria-label="Go to chapter 3: The window counter"></button><button type="button" aria-label="Go to chapter 4: Behind the counter"></button><button type="button" aria-label="Go to chapter 5: Rice meals"></button><button type="button" aria-label="Go to chapter 6: Pasta and waffles"></button><button type="button" aria-label="Go to chapter 7: Cakes and cookies"></button></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="edge" style="--from:var(--navy);--to:var(--ivory-2)" aria-hidden="true"></div>
+
+    <section class="section pick" aria-labelledby="pick-title" data-pick-root data-lamp>
+      <div class="container">
+        <span class="label label--rule reveal"><span class="num">03</span>Not sure yet?</span>
+        <h2 id="pick-title" class="reveal" style="--d:100ms">What are you <em>craving?</em></h2>
+        <div class="pick__grid">
+          <div class="pick__chips reveal" role="group" aria-label="Choose a mood" style="--d:150ms"><button class="pick__chip" type="button" data-pick="hot" aria-pressed="false">Something hot</button><button class="pick__chip" type="button" data-pick="cold" aria-pressed="false">Something cold</button><button class="pick__chip" type="button" data-pick="full" aria-pressed="false">Something filling</button><button class="pick__chip" type="button" data-pick="sweet" aria-pressed="false">Something sweet</button></div>
+          <figure class="pick__fig" data-tilt><div class="media"><img class="pick__img" src="images/food-cheesecake-trio-1100.jpg" srcset="images/food-cheesecake-trio-640.jpg 640w, images/food-cheesecake-trio-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 92vw" width="1100" height="1467" loading="lazy" decoding="async" alt="A hot cup and two iced lattes in Coffee Capital cups, in front of three blueberry cheesecake slices" data-pick-img="hot"><img class="pick__img" src="images/food-cakes-drinks-1100.jpg" srcset="images/food-cakes-drinks-640.jpg 640w, images/food-cakes-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 92vw" width="1100" height="1374" loading="lazy" decoding="async" alt="A green lemon drink and an iced coffee in Coffee Capital cups, beside two cheesecake slices" data-pick-img="cold"><img class="pick__img" src="images/food-burger-fries-1100.jpg" srcset="images/food-burger-fries-640.jpg 640w, images/food-burger-fries-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 92vw" width="939" height="1177" loading="lazy" decoding="async" alt="A sesame bun burger with lettuce, and fries in a paper cone with ketchup" data-pick-img="full"><img class="pick__img" src="images/food-biscoff-waffle-1100.jpg" srcset="images/food-biscoff-waffle-640.jpg 640w, images/food-biscoff-waffle-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 92vw" width="1024" height="1536" loading="lazy" decoding="async" alt="A waffle on a wooden stick, topped with cream, caramel sauce and a Lotus Biscoff biscuit" data-pick-img="sweet"></div></figure>
+          <div class="pick__out" aria-live="polite"><ul class="pick__list" data-pick-panel="hot" aria-label="Something hot"><li class="pick__item"><span class="pick__name">Americano</span><span class="pick__price">&#8369;90</span><span class="pick__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="pick__item"><span class="pick__name">Cappuccino</span><span class="pick__price">&#8369;110</span><span class="pick__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="pick__item"><span class="pick__name">Spanish Latte</span><span class="pick__price">&#8369;140</span><span class="pick__meta">Hot 12 oz &middot; Cold 16 oz</span></li></ul><ul class="pick__list" data-pick-panel="cold" aria-label="Something cold"><li class="pick__item"><span class="pick__name">Coconut Iced Latte</span><span class="pick__price">&#8369;160</span></li><li class="pick__item"><span class="pick__name">Biscoff Iced Latte</span><span class="pick__price">&#8369;190</span></li><li class="pick__item"><span class="pick__name">Ice Choco</span><span class="pick__price">&#8369;120</span></li></ul><ul class="pick__list" data-pick-panel="full" aria-label="Something filling"><li class="pick__item"><span class="pick__name">Tocilog</span><span class="pick__price">&#8369;160</span><span class="pick__meta">Chicken or pork</span></li><li class="pick__item"><span class="pick__name">Spaghetti Carbonara</span><span class="pick__price">&#8369;195</span></li><li class="pick__item"><span class="pick__name">Coffee Capital Burger</span><span class="pick__price">&#8369;280</span></li></ul><ul class="pick__list" data-pick-panel="sweet" aria-label="Something sweet"><li class="pick__item"><span class="pick__name">Classic</span><span class="pick__price">&#8369;135</span><span class="pick__meta">1 piece / 2 pieces &middot; Waffle</span></li><li class="pick__item"><span class="pick__name">Nutella</span><span class="pick__price">&#8369;160</span><span class="pick__meta">1 piece / 2 pieces &middot; Waffle</span></li><li class="pick__item"><span class="pick__name">Biscoff Bliss</span><span class="pick__price">&#8369;170</span><span class="pick__meta">1 piece / 2 pieces &middot; Waffle</span></li></ul></div>
+        </div>
+        <p class="pick__more reveal"><a class="link-arrow" href="menu.html">See everything on the menu <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
+      </div>
+    </section>
+
+    <div class="ribbon" data-ribbon role="img" aria-label="Spanish Latte, Spaghetti Carbonara, Biscoff Bliss, Capital Fries, Avocado Frappuccino, Tocilog, Pistachio Latte, Coffee Capital Burger, Nutella"><div class="ribbon__track" aria-hidden="true"><div class="ribbon__group"><span>Spanish Latte</span><img src="images/logo-mark-navy.png" alt="" width="25" height="34"><span>Spaghetti Carbonara</span><img src="images/logo-mark-navy.png" alt="" width="25" height="34"><span>Biscoff Bliss</span><img src="images/logo-mark-navy.png" alt="" width="25" height="34"><span>Capital Fries</span><img src="images/logo-mark-navy.png" alt="" width="25" height="34"><span>Avocado Frappuccino</span><img src="images/logo-mark-navy.png" alt="" width="25" height="34"><span>Tocilog</span><img src="images/logo-mark-navy.png" alt="" width="25" height="34"><span>Pistachio Latte</span><img src="images/logo-mark-navy.png" alt="" width="25" height="34"><span>Coffee Capital Burger</span><img src="images/logo-mark-navy.png" alt="" width="25" height="34"><span>Nutella</span><img src="images/logo-mark-navy.png" alt="" width="25" height="34"></div></div></div>
+
+    <section class="section board-section" aria-labelledby="board-title">
+      <div class="container">
+        <header class="board-head">
+          <span class="label label--rule reveal"><span class="num">04</span>The menu</span>
+          <h2 id="board-title" class="reveal" style="--d:100ms">What we serve</h2>
+          <p class="board__tip js-only reveal">Tap + to build a list to show at the counter.</p>
+        </header>
+        <div class="board" data-board>
+          <nav class="board__tabs reveal" aria-label="Menu categories"><a class="board__tab" href="#b-coffee" data-tab="coffee">Coffee</a><a class="board__tab" href="#b-blended" data-tab="blended">Blended &amp; iced</a><a class="board__tab" href="#b-tea" data-tab="tea">Tea &amp; chocolate</a><a class="board__tab" href="#b-rice" data-tab="rice">Rice meals</a><a class="board__tab" href="#b-snacks" data-tab="snacks">Snacks</a><a class="board__tab" href="#b-mains" data-tab="mains">Mains &amp; pasta</a><a class="board__tab" href="#b-waffles" data-tab="waffles">Waffles</a><a class="board__tab" href="#b-cakes" data-tab="cakes">Cakes &amp; cookies</a></nav>
+          <div class="board__panels">
+        <section class="board__panel" id="b-coffee" data-panel="coffee" aria-labelledby="bt-coffee">
+          <h3 class="sr-only" id="bt-coffee">Coffee &amp; espresso</h3>
+          <div class="board__body has-fig">
+            <div class="board__lists"><p class="board__note">Hot 12 oz &middot; Cold 16 oz unless noted.</p><h4 class="board__sub">Espresso drinks</h4><ul><li class="item" data-name="Espresso"><span class="item__name">Espresso</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;60</span><button class="item__add" type="button" data-id="coffee-1" data-name="Espresso" data-cat="Coffee" data-price="60" aria-label="Add Espresso to my list">+</button><span class="item__meta">Hot 12 oz</span></li><li class="item" data-name="Doppio"><span class="item__name">Doppio</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;80</span><button class="item__add" type="button" data-id="coffee-2" data-name="Doppio" data-cat="Coffee" data-price="80" aria-label="Add Doppio to my list">+</button><span class="item__meta">Hot 12 oz</span></li><li class="item" data-name="Americano"><span class="item__name">Americano</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;90</span><button class="item__add" type="button" data-id="coffee-3" data-name="Americano" data-cat="Coffee" data-price="90" aria-label="Add Americano to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Latte"><span class="item__name">Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;110</span><button class="item__add" type="button" data-id="coffee-4" data-name="Latte" data-cat="Coffee" data-price="110" aria-label="Add Latte to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Cappuccino"><span class="item__name">Cappuccino</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;110</span><button class="item__add" type="button" data-id="coffee-5" data-name="Cappuccino" data-cat="Coffee" data-price="110" aria-label="Add Cappuccino to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Sea Salt"><span class="item__name">Sea Salt</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="coffee-6" data-name="Sea Salt" data-cat="Coffee" data-price="130" aria-label="Add Sea Salt to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Spanish Latte"><span class="item__name">Spanish Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;140</span><button class="item__add" type="button" data-id="coffee-7" data-name="Spanish Latte" data-cat="Coffee" data-price="140" aria-label="Add Spanish Latte to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Caramel Macchiato"><span class="item__name">Caramel Macchiato</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-8" data-name="Caramel Macchiato" data-cat="Coffee" data-price="160" aria-label="Add Caramel Macchiato to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Mocha"><span class="item__name">Mocha</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-9" data-name="Mocha" data-cat="Coffee" data-price="160" aria-label="Add Mocha to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Vanilla"><span class="item__name">Vanilla</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-10" data-name="Vanilla" data-cat="Coffee" data-price="160" aria-label="Add Vanilla to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Salted Caramel"><span class="item__name">Salted Caramel</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-11" data-name="Salted Caramel" data-cat="Coffee" data-price="160" aria-label="Add Salted Caramel to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Macadamia"><span class="item__name">Macadamia</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-12" data-name="Macadamia" data-cat="Coffee" data-price="160" aria-label="Add Macadamia to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Butterscotch"><span class="item__name">Butterscotch</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-13" data-name="Butterscotch" data-cat="Coffee" data-price="160" aria-label="Add Butterscotch to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Toffee Nut"><span class="item__name">Toffee Nut</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;170</span><button class="item__add" type="button" data-id="coffee-14" data-name="Toffee Nut" data-cat="Coffee" data-price="170" aria-label="Add Toffee Nut to my list">+</button><span class="item__meta">Hot 12 oz &middot; Cold 16 oz</span></li><li class="item" data-name="Pick Your Own Beans"><span class="item__name">Pick Your Own Beans</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;140</span><button class="item__add" type="button" data-id="coffee-15" data-name="Pick Your Own Beans" data-cat="Coffee" data-price="140" aria-label="Add Pick Your Own Beans to my list">+</button><span class="item__meta">Details <span class="draft">to confirm</span></span></li></ul><h4 class="board__sub">Specialty lattes</h4><ul><li class="item" data-name="Coconut Iced Latte"><span class="item__name">Coconut Iced Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="coffee-16" data-name="Coconut Iced Latte" data-cat="Coffee" data-price="160" aria-label="Add Coconut Iced Latte to my list">+</button></li><li class="item" data-name="Biscoff Iced Latte"><span class="item__name">Biscoff Iced Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;190</span><button class="item__add" type="button" data-id="coffee-17" data-name="Biscoff Iced Latte" data-cat="Coffee" data-price="190" aria-label="Add Biscoff Iced Latte to my list">+</button></li><li class="item" data-name="Pistachio Latte"><span class="item__name">Pistachio Latte</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;170</span><button class="item__add" type="button" data-id="coffee-18" data-name="Pistachio Latte" data-cat="Coffee" data-price="170" aria-label="Add Pistachio Latte to my list">+</button></li></ul></div>
+          <figure class="board__fig" data-tilt><div class="media"><img src="images/interior-counter-drinks-1100.jpg" srcset="images/interior-counter-drinks-640.jpg 640w, images/interior-counter-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="1100" height="1379" loading="lazy" decoding="async" alt="Iced coffee drinks in Coffee Capital cups lined up on the counter, with the barista and shelves behind"></div><figcaption>Drinks on the counter</figcaption></figure>
+          </div>
+        </section>
+        <section class="board__panel" id="b-blended" data-panel="blended" aria-labelledby="bt-blended">
+          <h3 class="sr-only" id="bt-blended">Blended &amp; iced drinks</h3>
+          <div class="board__body">
+            <div class="board__lists"><p class="board__note">16 oz. Category and sizes <span class="draft">to confirm</span>. Strawberry and Mango each appear at two prices <span class="draft">to confirm</span>.</p><h4 class="board__sub">Frappuccino</h4><ul><li class="item" data-name="Avocado Frappuccino"><span class="item__name">Avocado Frappuccino</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;190</span><button class="item__add" type="button" data-id="blended-1" data-name="Avocado Frappuccino" data-cat="Blended &amp; iced" data-price="190" aria-label="Add Avocado Frappuccino to my list">+</button></li></ul><h4 class="board__sub">&#8369;160</h4><ul><li class="item" data-name="Macadamia"><span class="item__name">Macadamia</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-2" data-name="Macadamia" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Macadamia to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Chocolate Cookie"><span class="item__name">Chocolate Cookie</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-3" data-name="Chocolate Cookie" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Chocolate Cookie to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Salted Caramel"><span class="item__name">Salted Caramel</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-4" data-name="Salted Caramel" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Salted Caramel to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Biscoff"><span class="item__name">Biscoff</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-5" data-name="Biscoff" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Biscoff to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Toffee Nut"><span class="item__name">Toffee Nut</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="blended-6" data-name="Toffee Nut" data-cat="Blended &amp; iced" data-price="160" aria-label="Add Toffee Nut to my list">+</button><span class="item__meta">16 oz</span></li></ul><h4 class="board__sub">&#8369;150</h4><ul><li class="item" data-name="Banana"><span class="item__name">Banana</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;150</span><button class="item__add" type="button" data-id="blended-7" data-name="Banana" data-cat="Blended &amp; iced" data-price="150" aria-label="Add Banana to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Mango"><span class="item__name">Mango</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;150</span><button class="item__add" type="button" data-id="blended-8" data-name="Mango" data-cat="Blended &amp; iced" data-price="150" aria-label="Add Mango to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Strawberry"><span class="item__name">Strawberry</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;150</span><button class="item__add" type="button" data-id="blended-9" data-name="Strawberry" data-cat="Blended &amp; iced" data-price="150" aria-label="Add Strawberry to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Oreo"><span class="item__name">Oreo</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;150</span><button class="item__add" type="button" data-id="blended-10" data-name="Oreo" data-cat="Blended &amp; iced" data-price="150" aria-label="Add Oreo to my list">+</button><span class="item__meta">16 oz</span></li></ul><h4 class="board__sub">&#8369;130</h4><ul><li class="item" data-name="Strawberry"><span class="item__name">Strawberry</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-11" data-name="Strawberry" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Strawberry to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Cucumber"><span class="item__name">Cucumber</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-12" data-name="Cucumber" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Cucumber to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Green Apple"><span class="item__name">Green Apple</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-13" data-name="Green Apple" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Green Apple to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Mango"><span class="item__name">Mango</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-14" data-name="Mango" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Mango to my list">+</button><span class="item__meta">16 oz</span></li><li class="item" data-name="Peach Mango"><span class="item__name">Peach Mango</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="blended-15" data-name="Peach Mango" data-cat="Blended &amp; iced" data-price="130" aria-label="Add Peach Mango to my list">+</button><span class="item__meta">16 oz</span></li></ul></div>
+          </div>
+        </section>
+        <section class="board__panel" id="b-tea" data-panel="tea" aria-labelledby="bt-tea">
+          <h3 class="sr-only" id="bt-tea">Tea &amp; chocolate</h3>
+          <div class="board__body">
+            <div class="board__lists"><ul><li class="item" data-name="Tea"><span class="item__name">Tea</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;90</span><button class="item__add" type="button" data-id="tea-1" data-name="Tea" data-cat="Tea &amp; chocolate" data-price="90" aria-label="Add Tea to my list">+</button></li><li class="item" data-name="Hot Choco"><span class="item__name">Hot Choco</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;100</span><button class="item__add" type="button" data-id="tea-2" data-name="Hot Choco" data-cat="Tea &amp; chocolate" data-price="100" aria-label="Add Hot Choco to my list">+</button></li><li class="item" data-name="Ice Choco"><span class="item__name">Ice Choco</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;120</span><button class="item__add" type="button" data-id="tea-3" data-name="Ice Choco" data-cat="Tea &amp; chocolate" data-price="120" aria-label="Add Ice Choco to my list">+</button></li></ul></div>
+          </div>
+        </section>
+        <section class="board__panel" id="b-rice" data-panel="rice" aria-labelledby="bt-rice">
+          <h3 class="sr-only" id="bt-rice">Rice meals</h3>
+          <div class="board__body has-fig">
+            <div class="board__lists"><ul><li class="item" data-name="Tocilog"><span class="item__name">Tocilog</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="rice-1" data-name="Tocilog" data-cat="Rice meals" data-price="160" aria-label="Add Tocilog to my list">+</button><span class="item__meta">Chicken or pork</span></li><li class="item" data-name="Porksilog"><span class="item__name">Porksilog</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;180</span><button class="item__add" type="button" data-id="rice-2" data-name="Porksilog" data-cat="Rice meals" data-price="180" aria-label="Add Porksilog to my list">+</button></li><li class="item" data-name="Spamsilog"><span class="item__name">Spamsilog</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;190</span><button class="item__add" type="button" data-id="rice-3" data-name="Spamsilog" data-cat="Rice meals" data-price="190" aria-label="Add Spamsilog to my list">+</button></li></ul></div>
+          <figure class="board__fig" data-tilt><div class="media"><img src="images/food-rice-bowl-1100.jpg" srcset="images/food-rice-bowl-640.jpg 640w, images/food-rice-bowl-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="1024" height="1365" loading="lazy" decoding="async" alt="A rice bowl with sliced sausage, cheese sauce and a fried egg"></div><figcaption>Rice meal</figcaption></figure>
+          </div>
+        </section>
+        <section class="board__panel" id="b-snacks" data-panel="snacks" aria-labelledby="bt-snacks">
+          <h3 class="sr-only" id="bt-snacks">Sandwiches &amp; snacks</h3>
+          <div class="board__body has-fig">
+            <div class="board__lists"><ul><li class="item" data-name="Capital Fries"><span class="item__name">Capital Fries</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;110</span><button class="item__add" type="button" data-id="snacks-1" data-name="Capital Fries" data-cat="Snacks" data-price="110" aria-label="Add Capital Fries to my list">+</button></li><li class="item" data-name="Tuna Sandwich"><span class="item__name">Tuna Sandwich</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;130</span><button class="item__add" type="button" data-id="snacks-2" data-name="Tuna Sandwich" data-cat="Snacks" data-price="130" aria-label="Add Tuna Sandwich to my list">+</button></li><li class="item" data-name="Chicken Sandwich"><span class="item__name">Chicken Sandwich</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;140</span><button class="item__add" type="button" data-id="snacks-3" data-name="Chicken Sandwich" data-cat="Snacks" data-price="140" aria-label="Add Chicken Sandwich to my list">+</button></li></ul></div>
+          <figure class="board__fig" data-tilt><div class="media"><img src="images/food-sandwiches-drinks-1100.jpg" srcset="images/food-sandwiches-drinks-640.jpg 640w, images/food-sandwiches-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="1100" height="1227" loading="lazy" decoding="async" alt="Triangle sandwiches on a wooden tray beside two iced drinks and a cup of rice"></div><figcaption>Sandwiches</figcaption></figure>
+          </div>
+        </section>
+        <section class="board__panel" id="b-mains" data-panel="mains" aria-labelledby="bt-mains">
+          <h3 class="sr-only" id="bt-mains">Mains &amp; pasta</h3>
+          <div class="board__body has-fig">
+            <div class="board__lists"><ul><li class="item" data-name="Pork Tenderloin Salpicao"><span class="item__name">Pork Tenderloin Salpicao</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;180</span><button class="item__add" type="button" data-id="mains-1" data-name="Pork Tenderloin Salpicao" data-cat="Mains &amp; pasta" data-price="180" aria-label="Add Pork Tenderloin Salpicao to my list">+</button></li><li class="item" data-name="Hungarian"><span class="item__name">Hungarian</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;180</span><button class="item__add" type="button" data-id="mains-2" data-name="Hungarian" data-cat="Mains &amp; pasta" data-price="180" aria-label="Add Hungarian to my list">+</button></li><li class="item" data-name="Spaghetti Carbonara"><span class="item__name">Spaghetti Carbonara</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;195</span><button class="item__add" type="button" data-id="mains-3" data-name="Spaghetti Carbonara" data-cat="Mains &amp; pasta" data-price="195" aria-label="Add Spaghetti Carbonara to my list">+</button></li><li class="item" data-name="Spaghetti Meat Sauce"><span class="item__name">Spaghetti Meat Sauce</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;195</span><button class="item__add" type="button" data-id="mains-4" data-name="Spaghetti Meat Sauce" data-cat="Mains &amp; pasta" data-price="195" aria-label="Add Spaghetti Meat Sauce to my list">+</button></li><li class="item" data-name="Spaghetti Shrimp Al Pesto"><span class="item__name">Spaghetti Shrimp Al Pesto</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;195</span><button class="item__add" type="button" data-id="mains-5" data-name="Spaghetti Shrimp Al Pesto" data-cat="Mains &amp; pasta" data-price="195" aria-label="Add Spaghetti Shrimp Al Pesto to my list">+</button></li><li class="item" data-name="Fried Chicken Tender"><span class="item__name">Fried Chicken Tender</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;200</span><button class="item__add" type="button" data-id="mains-6" data-name="Fried Chicken Tender" data-cat="Mains &amp; pasta" data-price="200" aria-label="Add Fried Chicken Tender to my list">+</button></li><li class="item" data-name="Coffee Capital Burger"><span class="item__name">Coffee Capital Burger</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;280</span><button class="item__add" type="button" data-id="mains-7" data-name="Coffee Capital Burger" data-cat="Mains &amp; pasta" data-price="280" aria-label="Add Coffee Capital Burger to my list">+</button></li></ul></div>
+          <figure class="board__fig" data-tilt><div class="media"><img src="images/food-burger-fries-1100.jpg" srcset="images/food-burger-fries-640.jpg 640w, images/food-burger-fries-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="939" height="1177" loading="lazy" decoding="async" alt="A sesame bun burger with lettuce, and fries in a paper cone with ketchup"></div><figcaption>Burger and fries</figcaption></figure>
+          </div>
+        </section>
+        <section class="board__panel" id="b-waffles" data-panel="waffles" aria-labelledby="bt-waffles">
+          <h3 class="sr-only" id="bt-waffles">Waffles</h3>
+          <div class="board__body has-fig">
+            <div class="board__lists"><p class="board__note">1 piece or 2 pieces. Price per portion <span class="draft">to confirm</span>.</p><ul><li class="item" data-name="Classic"><span class="item__name">Classic</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;135</span><button class="item__add" type="button" data-id="waffles-1" data-name="Classic" data-cat="Waffles" data-price="135" aria-label="Add Classic to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li><li class="item" data-name="Chocochips"><span class="item__name">Chocochips</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;155</span><button class="item__add" type="button" data-id="waffles-2" data-name="Chocochips" data-cat="Waffles" data-price="155" aria-label="Add Chocochips to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li><li class="item" data-name="Oreo Crumble"><span class="item__name">Oreo Crumble</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="waffles-3" data-name="Oreo Crumble" data-cat="Waffles" data-price="160" aria-label="Add Oreo Crumble to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li><li class="item" data-name="Nutella"><span class="item__name">Nutella</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;160</span><button class="item__add" type="button" data-id="waffles-4" data-name="Nutella" data-cat="Waffles" data-price="160" aria-label="Add Nutella to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li><li class="item" data-name="Biscoff Bliss"><span class="item__name">Biscoff Bliss</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">&#8369;170</span><button class="item__add" type="button" data-id="waffles-5" data-name="Biscoff Bliss" data-cat="Waffles" data-price="170" aria-label="Add Biscoff Bliss to my list">+</button><span class="item__meta">1 piece / 2 pieces</span></li></ul></div>
+          <figure class="board__fig" data-tilt><div class="media"><img src="images/food-biscoff-waffle-1100.jpg" srcset="images/food-biscoff-waffle-640.jpg 640w, images/food-biscoff-waffle-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="1024" height="1536" loading="lazy" decoding="async" alt="A waffle on a wooden stick, topped with cream, caramel sauce and a Lotus Biscoff biscuit"></div><figcaption>Biscoff waffle</figcaption></figure>
+          </div>
+        </section>
+        <section class="board__panel" id="b-cakes" data-panel="cakes" aria-labelledby="bt-cakes">
+          <h3 class="sr-only" id="bt-cakes">Cakes &amp; cookies</h3>
+          <div class="board__body has-fig">
+            <div class="board__lists"><p class="board__note">Cheesecake, red velvet, chocolate cake and cookies. Flavors and prices <span class="draft">to confirm</span>.</p></div>
+          <figure class="board__fig" data-tilt><div class="media"><img src="images/food-cake-selection-1100.jpg" srcset="images/food-cake-selection-640.jpg 640w, images/food-cake-selection-1100.jpg 1100w" sizes="(min-width: 900px) 28vw, 80vw" width="939" height="1177" loading="lazy" decoding="async" alt="Six boxes seen from above: a pecan cake, cookies, two blueberry cheesecake slices, red velvet cake and chocolate cake"></div><figcaption>Cakes and cookies</figcaption></figure>
+          </div>
+        </section>
+          </div>
+        </div>
+        <p class="board-more"><a class="link-arrow" href="menu.html">Open the full menu page <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
+      </div>
+    </section>
+
+    <div class="edge" style="--from:var(--ivory);--to:var(--navy)" aria-hidden="true"></div>
+
+    <section class="reel" data-reel data-lamp aria-labelledby="reel-title">
+      <div class="container reel__head">
+        <div>
+          <span class="label label--rule reveal"><span class="num">05</span>On the table</span>
+          <h2 id="reel-title" class="reveal" style="--d:80ms">Made for the <em>table.</em></h2>
+        </div>
+        <div class="reel__ctrl"><button class="reel__btn" type="button" data-reel-prev aria-label="Scroll photos back">&larr;</button><button class="reel__btn" type="button" data-reel-next aria-label="Scroll photos forward">&rarr;</button></div>
+      </div>
+      <div class="reel__track" data-cursor="Drag" tabindex="0" aria-label="Photos, scroll sideways">
+          <figure class="reel__item" data-tilt>
+            <a href="images/food-cakes-drinks-1100.jpg" data-lightbox data-alt="A green lemon drink and an iced coffee in Coffee Capital cups, beside a pistachio and a blueberry cheesecake slice" data-caption="Iced drinks and cheesecake" data-cursor="View" draggable="false" aria-label="Open photo: Iced drinks and cheesecake">
+              <div class="media"><img src="images/food-cakes-drinks-1100.jpg" srcset="images/food-cakes-drinks-640.jpg 640w, images/food-cakes-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 70vw" width="1100" height="1374" loading="lazy" decoding="async" alt="A green lemon drink and an iced coffee in Coffee Capital cups, beside a pistachio and a blueberry cheesecake slice" draggable="false"></div>
+            </a>
+            <figcaption class="reel__cap"><b>01</b> Iced drinks and cheesecake</figcaption>
+          </figure>
+          <figure class="reel__item" data-tilt>
+            <a href="images/food-cheesecake-trio-1100.jpg" data-lightbox data-alt="A hot cup and two iced lattes in front of three blueberry cheesecake slices" data-caption="Lattes and blueberry cheesecake" data-cursor="View" draggable="false" aria-label="Open photo: Lattes and blueberry cheesecake">
+              <div class="media"><img src="images/food-cheesecake-trio-1100.jpg" srcset="images/food-cheesecake-trio-640.jpg 640w, images/food-cheesecake-trio-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 70vw" width="1100" height="1467" loading="lazy" decoding="async" alt="A hot cup and two iced lattes in front of three blueberry cheesecake slices" draggable="false"></div>
+            </a>
+            <figcaption class="reel__cap"><b>02</b> Lattes and blueberry cheesecake</figcaption>
+          </figure>
+          <figure class="reel__item" data-tilt>
+            <a href="images/food-rice-drinks-1100.jpg" data-lightbox data-alt="Two iced drinks and two rice bowls topped with fried eggs" data-caption="Rice bowls and iced drinks" data-cursor="View" draggable="false" aria-label="Open photo: Rice bowls and iced drinks">
+              <div class="media"><img src="images/food-rice-drinks-1100.jpg" srcset="images/food-rice-drinks-640.jpg 640w, images/food-rice-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 70vw" width="1086" height="1211" loading="lazy" decoding="async" alt="Two iced drinks and two rice bowls topped with fried eggs" draggable="false"></div>
+            </a>
+            <figcaption class="reel__cap"><b>03</b> Rice bowls and iced drinks</figcaption>
+          </figure>
+          <figure class="reel__item" data-tilt>
+            <a href="images/food-rice-bowl-1100.jpg" data-lightbox data-alt="A rice bowl with sliced sausage, cheese sauce and a fried egg" data-caption="Rice bowl" data-cursor="View" draggable="false" aria-label="Open photo: Rice bowl">
+              <div class="media"><img src="images/food-rice-bowl-1100.jpg" srcset="images/food-rice-bowl-640.jpg 640w, images/food-rice-bowl-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 70vw" width="1024" height="1365" loading="lazy" decoding="async" alt="A rice bowl with sliced sausage, cheese sauce and a fried egg" draggable="false"></div>
+            </a>
+            <figcaption class="reel__cap"><b>04</b> Rice bowl</figcaption>
+          </figure>
+          <figure class="reel__item" data-tilt>
+            <a href="images/food-burger-fries-1100.jpg" data-lightbox data-alt="A sesame bun burger with lettuce, and fries in a paper cone with ketchup" data-caption="Burger and fries" data-cursor="View" draggable="false" aria-label="Open photo: Burger and fries">
+              <div class="media"><img src="images/food-burger-fries-1100.jpg" srcset="images/food-burger-fries-640.jpg 640w, images/food-burger-fries-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 70vw" width="939" height="1177" loading="lazy" decoding="async" alt="A sesame bun burger with lettuce, and fries in a paper cone with ketchup" draggable="false"></div>
+            </a>
+            <figcaption class="reel__cap"><b>05</b> Burger and fries</figcaption>
+          </figure>
+          <figure class="reel__item" data-tilt>
+            <a href="images/food-biscoff-waffle-1100.jpg" data-lightbox data-alt="A waffle on a wooden stick, topped with cream, caramel sauce and a Lotus Biscoff biscuit" data-caption="Biscoff waffle" data-cursor="View" draggable="false" aria-label="Open photo: Biscoff waffle">
+              <div class="media"><img src="images/food-biscoff-waffle-1100.jpg" srcset="images/food-biscoff-waffle-640.jpg 640w, images/food-biscoff-waffle-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 70vw" width="1024" height="1536" loading="lazy" decoding="async" alt="A waffle on a wooden stick, topped with cream, caramel sauce and a Lotus Biscoff biscuit" draggable="false"></div>
+            </a>
+            <figcaption class="reel__cap"><b>06</b> Biscoff waffle</figcaption>
+          </figure>
+          <figure class="reel__item" data-tilt>
+            <a href="images/food-pasta-waffle-1100.jpg" data-lightbox data-alt="Spaghetti with shrimp and pesto, toasted bread, a Biscoff waffle on a stick and a chocolate drink" data-caption="Pasta, toast and waffle" data-cursor="View" draggable="false" aria-label="Open photo: Pasta, toast and waffle">
+              <div class="media"><img src="images/food-pasta-waffle-1100.jpg" srcset="images/food-pasta-waffle-640.jpg 640w, images/food-pasta-waffle-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 70vw" width="1100" height="1224" loading="lazy" decoding="async" alt="Spaghetti with shrimp and pesto, toasted bread, a Biscoff waffle on a stick and a chocolate drink" draggable="false"></div>
+            </a>
+            <figcaption class="reel__cap"><b>07</b> Pasta, toast and waffle</figcaption>
+          </figure>
+          <figure class="reel__item" data-tilt>
+            <a href="images/food-sandwiches-drinks-1100.jpg" data-lightbox data-alt="Triangle sandwiches on a wooden tray beside two iced drinks and a cup of rice" data-caption="Sandwiches and drinks" data-cursor="View" draggable="false" aria-label="Open photo: Sandwiches and drinks">
+              <div class="media"><img src="images/food-sandwiches-drinks-1100.jpg" srcset="images/food-sandwiches-drinks-640.jpg 640w, images/food-sandwiches-drinks-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 70vw" width="1100" height="1227" loading="lazy" decoding="async" alt="Triangle sandwiches on a wooden tray beside two iced drinks and a cup of rice" draggable="false"></div>
+            </a>
+            <figcaption class="reel__cap"><b>08</b> Sandwiches and drinks</figcaption>
+          </figure>
+          <figure class="reel__item" data-tilt>
+            <a href="images/food-cake-selection-1100.jpg" data-lightbox data-alt="Six boxes seen from above: a pecan cake, cookies, two blueberry cheesecake slices, red velvet cake and chocolate cake" data-caption="Cakes and cookies" data-cursor="View" draggable="false" aria-label="Open photo: Cakes and cookies">
+              <div class="media"><img src="images/food-cake-selection-1100.jpg" srcset="images/food-cake-selection-640.jpg 640w, images/food-cake-selection-1100.jpg 1100w" sizes="(min-width: 900px) 26vw, 70vw" width="939" height="1177" loading="lazy" decoding="async" alt="Six boxes seen from above: a pecan cake, cookies, two blueberry cheesecake slices, red velvet cake and chocolate cake" draggable="false"></div>
+            </a>
+            <figcaption class="reel__cap"><b>09</b> Cakes and cookies</figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <section class="section visit on-navy" id="visit" aria-labelledby="visit-title" data-lamp>
+      <div class="container">
+        <span class="label label--rule reveal"><span class="num">06</span>Visit</span>
+        <h2 class="h2 reveal" id="visit-title" style="--d:80ms">Find us in <em>Patin-ay.</em></h2>
+        <div class="visit__grid">
+          <figure class="visit__fig reveal-media" data-tilt>
+            <div class="media"><img src="images/visit-exterior-day-1100.jpg" srcset="images/visit-exterior-day-640.jpg 640w, images/visit-exterior-day-1100.jpg 1100w" sizes="(min-width: 900px) 45vw, 92vw" width="1100" height="733" loading="lazy" decoding="async" alt="Coffee Capital&#x27;s white and blue building in daylight, with the logo above the entrance"></div>
+            <figcaption class="caption"><span class="caption__n">By day</span> Purok 2, Patin-ay</figcaption>
+          </figure>
+          <div class="visit__info reveal" style="--d:120ms">
+            <p class="open-now open-card" data-open data-state="unknown"><span class="open-now__dot" aria-hidden="true"></span><span data-open-text>Mon&ndash;Fri 9 AM&ndash;10 PM &middot; Sat&ndash;Sun 12 PM&ndash;10 PM</span></p>
+            <dl class="visit__details">
+              <div class="visit__row"><dt>Address</dt><dd>Purok 2, Patin-ay, Prosperidad,<br>Agusan del Sur, Philippines 8500</dd></div>
+              <div class="visit__row"><dt>Opening hours</dt><dd>
+                <table class="hours"><tbody>
+                  <tr><th scope="row">Monday to Friday</th><td>9:00 AM &ndash; 10:00 PM</td></tr>
+                  <tr><th scope="row">Saturday and Sunday</th><td>12:00 PM &ndash; 10:00 PM</td></tr>
+                </tbody></table></dd></div>
+              <div class="visit__row"><dt>Phone</dt><dd><a href="tel:+639278547741">0927 854 7741</a></dd></div>
+              <div class="visit__row"><dt>Email</dt><dd><a href="mailto:coffee.capitalcafe@gmail.com">coffee.capitalcafe@gmail.com</a></dd></div>
+            </dl>
+            <div class="visit__actions">
+              <a class="btn btn--light" data-magnet href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Capital+Patin-ay+Prosperidad+Agusan+del+Sur" target="_blank" rel="noopener">Get directions <span class="arrow" aria-hidden="true">&rarr;</span></a>
+              <a class="btn btn--outline-light" href="tel:+639278547741">Call 0927 854 7741</a>
+            </div>
+          </div>
+        </div>
+        <div class="tiles reveal">
+          <a class="tile" href="https://www.instagram.com/coffee.capitalcafe/" target="_blank" rel="noopener"><span><small>Instagram</small>@coffee.capitalcafe</span><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="tile" href="https://www.tiktok.com/@coffee.capitalcafe" target="_blank" rel="noopener"><span><small>TikTok</small>@coffee.capitalcafe</span><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="tile" href="https://linktr.ee/coffee.capitalcafe" target="_blank" rel="noopener"><span><small>Linktree</small>All our links</span><span class="arrow" aria-hidden="true">&nearr;</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-lamp>
+    <div class="container footer__cta">
+      <p class="footer__time">Now in Prosperidad <span data-clock></span></p>
+      <h2 class="footer__big">See you in <em>Patin-ay.</em></h2>
+      <div class="footer__actions">
+        <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Capital+Patin-ay+Prosperidad+Agusan+del+Sur" target="_blank" rel="noopener">Get directions <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn--outline-light" href="tel:+639278547741">Call 0927 854 7741</a>
+      </div>
+    </div>
+    <div class="container site-footer__inner">
+      <div>
+        <img src="images/logo-mark-white.png" alt="Coffee Capital" width="33" height="44">
+        <p style="margin-top:12px;color:var(--taupe);max-width:30ch">Your daily coffee stop in Prosperidad.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <address>
+          Purok 2, Patin-ay, Prosperidad,<br>Agusan del Sur 8500<br><br>
+          <a href="tel:+639278547741">0927 854 7741</a><br>
+          <a href="mailto:coffee.capitalcafe@gmail.com">coffee.capitalcafe@gmail.com</a>
+        </address>
+      </div>
+      <div>
+        <h3>Elsewhere</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/coffee.capitalcafe/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@coffee.capitalcafe" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://linktr.ee/coffee.capitalcafe" target="_blank" rel="noopener">Linktree</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="visit.html">About &amp; Visit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container"><p class="wordmark" aria-hidden="true"><span>C</span><span>O</span><span>F</span><span>F</span><span>E</span><span>E</span> <span>C</span><span>A</span><span>P</span><span>I</span><span>T</span><span>A</span><span>L</span></p></div>
+    <div class="container site-footer__base"><span>&copy; 2026 Coffee Capital</span><span>Purok 2, Patin-ay, Prosperidad, Agusan del Sur 8500</span></div>
+  </footer>
+
+  <nav class="dock" aria-label="Quick actions">
+    <a href="tel:+639278547741"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call</span></a>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Capital+Patin-ay+Prosperidad+Agusan+del+Sur" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Directions</span></a>
+    <a href="menu.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span>Menu</span></a>
+  </nav>
+
+  <button class="order-pill" type="button" aria-haspopup="dialog"><span>My list</span> <b data-order-count>0</b> <span data-order-total>&#8369;0</span></button>
+  <dialog class="order" id="order" aria-label="My list">
+    <div class="order__in">
+      <div class="order__head"><h2>My list</h2><button class="order__x" type="button" data-order-close aria-label="Close">&times;</button></div>
+      <div class="order__list" data-order-list></div>
+      <div class="order__foot">
+        <p class="order__total"><span>Total</span><b data-order-sum>&#8369;0</b></p>
+        <p class="order__note">A list to show at the counter. It does not place an order. Prices as posted; items marked &ldquo;to confirm&rdquo; may change.</p>
+        <div class="order__acts">
+          <button class="btn btn--ghost-dark" type="button" data-order-clear>Clear</button>
+          <button class="btn btn--primary" type="button" data-order-copy>Copy list</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
